@@ -1,45 +1,63 @@
-/*************/
-/* CSS RESET */
-/*************/
+@font-face {
+  font-family: 'mario';
+  src: url('../fonts/super-mario-brothers-webfont.woff2') format('woff2'),
+       url('../fonts/super-mario-brothers-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
-body {
-  margin:0;
-}
-
-button:not([disabled]) {
-  cursor:pointer;
-}
-
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 
 :root {
-  --color-headings:crimson
+  --color-background: rgba(16 117 127 0.5);
+  --color-logo-s: rgb(87 153 214);
+  --color-logo-u: rgb(240 206 48);
+  --color-logo-p: rgb(197 41 23);
+  --color-logo-e: rgb(112 173 67);
 }
 
+body {
+  margin:0;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
-
-
+header p {
+  font-family: 'mario', 'serif';
+}
 
 /********************/
 /* ALGEMENE STYLING */
 /********************/
 
 h1 {
-  color:var(--color-headings);
+  font-family: 'mario', 'serif';
+  display: flex;
+  justify-content: center;
 }
 
+li {
+  list-style: none;
+}
 
-/* ... */
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+video {
+  max-width: 20%;
+  display: none;
+}
 
+button {
+  background-color: blueviolet;
+}
