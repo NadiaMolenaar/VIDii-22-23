@@ -1,0 +1,94 @@
+  /********************/
+  /*   GRID LAY-OUT   */
+  /********************/
+
+  .vakkenkast {
+    display: grid;
+    grid-template-columns: [first] 36.5em [line2] 7em [line3] 7em [line4] 7em [line5] 7em [line6] 1fr [end];
+    grid-column-gap: 1em;
+    grid-template-rows: [first] 21em [line2] 7em [line3] 7em[line4] 1fr [end];
+    grid-row-gap: 1em;
+  }
+
+  .button1 {
+    grid-column-start: line2;
+    grid-column-end: line3;
+    grid-row-start: line2;
+    grid-row-end: line3;
+
+    place-self: center;
+  }
+
+  .button2 {
+    grid-column-start: line3;
+    grid-column-end: line4;
+    grid-row-start: line2;
+    grid-row-end: line3;
+
+    place-self: center;
+  }
+  
+  .button3 {
+    grid-column-start: line4;
+    grid-column-end: line5;
+    grid-row-start: line2;
+    grid-row-end: line3;
+
+    place-self: center;
+  }
+
+  .button4 {
+    grid-column-start: line5;
+    grid-column-end: line6;
+    grid-row-start: line2;
+    grid-row-end: line3;
+
+    place-self: center;
+  }
+
+  .button5 {
+    grid-column-start: line2;
+    grid-column-end: line3;
+    grid-row-start: line3;
+    grid-row-end: line4;
+
+    place-self: center;
+  }
+
+  .button6 {
+    grid-column-start: line3;
+    grid-column-end: line4;
+    grid-row-start: line3;
+    grid-row-end: line4;
+
+    place-self: center;
+  }
+
+  .button7 {
+    grid-column-start: line4;
+    grid-column-end: line5;
+    grid-row-start: line3;
+    grid-row-end: line4;
+
+    place-self: center;
+  }
+
+  .button8 {
+    grid-column-start: line5;
+    grid-column-end: line6;
+    grid-row-start: line3;
+    grid-row-end: line4;
+
+    place-self: center;
+  }
+
+  .play {
+    width: 6.5em;
+    height: 6.5em;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+  }
