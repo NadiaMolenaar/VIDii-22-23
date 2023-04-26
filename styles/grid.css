@@ -1,94 +1,134 @@
-  /********************/
-  /*   GRID LAY-OUT   */
-  /********************/
+/*************************/
+/*   GRID LAY-OUT MAIN   */
+/*************************/
 
-  .vakkenkast {
-    display: grid;
-    grid-template-columns: [first] 36.5em [line2] 7em [line3] 7em [line4] 7em [line5] 7em [line6] 1fr [end];
-    grid-column-gap: 1em;
-    grid-template-rows: [first] 21em [line2] 7em [line3] 7em[line4] 1fr [end];
-    grid-row-gap: 1em;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: [first] 1fr [line2] 7em [line3] 7em [line4] 7em [line5] 7em [line6] 1fr [end];
+  grid-column-gap: 1em;
+  grid-template-rows: [first] 1fr [line2] 10em [line3] 5em [line4] 30em [line5] 10em [line6] 7em [line7] 7em [line8] 1fr [end];
+  grid-row-gap: 1em;
+}
 
-  .button1 {
-    grid-column-start: line2;
-    grid-column-end: line3;
-    grid-row-start: line2;
-    grid-row-end: line3;
 
-    place-self: center;
-  }
 
-  .button2 {
-    grid-column-start: line3;
-    grid-column-end: line4;
-    grid-row-start: line2;
-    grid-row-end: line3;
+/******************************/
+/*   GRID LAY-OUT 1e SECTIE   */
+/******************************/
 
-    place-self: center;
-  }
-  
-  .button3 {
-    grid-column-start: line4;
-    grid-column-end: line5;
-    grid-row-start: line2;
-    grid-row-end: line3;
+/* Dit maakt van de eerste sectie een grid container */
+section:nth-child(1) {
+  display: grid;
+} 
 
-    place-self: center;
-  }
+.info {
+  grid-column-start: line2;
+  grid-column-end: line6;
+  grid-row-start: line2;
+  grid-row-end: line3;
 
-  .button4 {
-    grid-column-start: line5;
-    grid-column-end: line6;
-    grid-row-start: line2;
-    grid-row-end: line3;
+  place-self: center;
+}
 
-    place-self: center;
-  }
 
-  .button5 {
-    grid-column-start: line2;
-    grid-column-end: line3;
-    grid-row-start: line3;
-    grid-row-end: line4;
 
-    place-self: center;
-  }
+/******************************/
+/*   GRID LAY-OUT 2e SECTIE   */
+/******************************/
 
-  .button6 {
-    grid-column-start: line3;
-    grid-column-end: line4;
-    grid-row-start: line3;
-    grid-row-end: line4;
+/* Dit maakt van de li's in tweede sectie een grid container */
+section:nth-child(2) {
+  display: grid;
+} 
 
-    place-self: center;
-  }
+.video {
+  grid-column-start: line2;
+  grid-column-end: line6;
+  grid-row-start: line4;
+  grid-row-end: line5;
 
-  .button7 {
-    grid-column-start: line4;
-    grid-column-end: line5;
-    grid-row-start: line3;
-    grid-row-end: line4;
+  place-self: center;
+}
 
-    place-self: center;
-  }
 
-  .button8 {
-    grid-column-start: line5;
-    grid-column-end: line6;
-    grid-row-start: line3;
-    grid-row-end: line4;
 
-    place-self: center;
-  }
+/******************************/
+/*   GRID LAY-OUT 3e SECTIE   */
+/******************************/
 
-  .play {
-    width: 6.5em;
-    height: 6.5em;
-    padding: 0;
-    margin: 0;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-  }
+/* Dit maakt van de derde sectie een grid container */
+section:nth-child(3) {
+  display: grid;
+} 
+
+button:nth-of-type(1) {
+  grid-column-start: line2;
+  grid-column-end: line3;
+  grid-row-start: line6;
+  grid-row-end: line7;
+
+  place-self: center;
+}
+
+button:nth-of-type(2) {
+  grid-column-start: line3;
+  grid-column-end: line4;
+  grid-row-start: line6;
+  grid-row-end: line7;
+
+  place-self: center;
+}
+
+button:nth-of-type(3) {
+  grid-column-start: line4;
+  grid-column-end: line5;
+  grid-row-start: line6;
+  grid-row-end: line7;
+
+  place-self: center;
+}
+
+button:nth-of-type(4) {
+  grid-column-start: line5;
+  grid-column-end: line6;
+  grid-row-start: line6;
+  grid-row-end: line7;
+
+  place-self: center;
+}
+
+button:nth-of-type(5) {
+  grid-column-start: line2;
+  grid-column-end: line3;
+  grid-row-start: line7;
+  grid-row-end: line8;
+
+  place-self: center;
+}
+
+button:nth-of-type(6) {
+  grid-column-start: line3;
+  grid-column-end: line4;
+  grid-row-start: line7;
+  grid-row-end: line8;
+
+  place-self: center;
+}
+
+button:nth-of-type(7) {
+  grid-column-start: line4;
+  grid-column-end: line5;
+  grid-row-start: line7;
+  grid-row-end: line8;
+
+  place-self: center;
+}
+
+button:nth-of-type(8) {
+  grid-column-start: line5;
+  grid-column-end: line6;
+  grid-row-start: line7;
+  grid-row-end: line8;
+
+  place-self: center;
+}
