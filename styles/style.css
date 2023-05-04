@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'mario';
+    src: url('/fonts/super-mario-webfont.woff2') format('woff2'),
+         url('/fonts/super-mario-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'roboto';
+    src: url('/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* naar een idee van Jen Simmons */
+  *, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  
+  :root {
+    --color-background: #10757f50;
+    --color-paragraph-small-text: rgb(29 29 29);
+    --color-h1-p: rgb(197 41 23);
+    --color-h1-l: rgb(87 153 214);
+    --color-h1-a: rgb(112 173 67);
+    --color-h1-y: rgb(240 206 48);
+    /* --color-h1-border: #000; */
+  }
+
+  body {
+    height:100vh;
+    margin: 0;
+    background-color: var(--color-background);
+
+    background-image: url(/images/background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;  
+  }
+  
+  /********************/
+  /* ALGEMENE STYLING */
+  /********************/
+  
+  main {
+   height: 100%;
+  }
+
+  h1 {
+    margin: 0;
+
+    font-family: 'mario', 'serif';
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  h1 span:nth-of-type(1) {
+    color: var(--color-h1-p);
+    /* border-color: var(--h1-border); */
+  }
+
+  h1 span:nth-of-type(2) {
+    color: var(--color-h1-l);
+    /* border-color: var(--h1-border); */
+  }
+
+  h1 span:nth-of-type(3) {
+    color: var(--color-h1-a);
+    /* border-color: var(--h1-border); */
+  }
+
+  h1 span:nth-of-type(4) {
+    color: var(--color-h1-y);
+    /* border-color: var(--h1-border); */
+  }
+
+  p {
+    margin: 0;
+    padding: 0.5em;
+    background-color: blueviolet;
+
+    font-family: 'roboto', 'sans-serif';
+    font-size: 1em;
+    text-align: center;
+
+    max-width: 35em;
+  }
+
+  .info p {
+    /* margin: 0; */
+    /* padding: 0.5em; */
+
+    font-family: 'mario', 'serif';
+    font-size: 1.2em;
+    /* text-align: center; */
+    line-height: 1.5em;
+  }
+
+  section:nth-child(2) {
+    background-image: url(/images/tv.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+  }
+
+  ol {
+    list-style: none;
+    margin:0;
+    padding:0;
+    list-style: none;
+  }
+
+  ol li p:nth-of-type(1) {
+    font-family: 'mario', 'serif';
+  }
+
+  ol li {
+    display: flex;
+  }
+
+  li video {
+    width: 40vh;
+    height: auto;
+  }
+
+  section:nth-child(3) {
+    background-image: url(/images/kast.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+  }
+  button {
+    width: 7em;
+    height: 7em;
+
+    background: none;
+  }
+
+  .button {
+    padding: 0;
+    
+    background-image: url(/images/button.svg);
+    background-repeat: no-repeat;
+    background-size: 6em;
+    background-position: center;
+    border:none;
+
+    font-family: 'mario', 'serif';
+  }
+
+  .button:hover {
+    cursor: url(/cursors/mario.png), pointer;
+  }
+
+  /* .button:focus {
+
+  }
+
+  .button:active {
+
+  } */
+
+
+
+  /****************************/
+  /* (ON)ZICHTBAAR MAKEN INFO */
+  /****************************/
+
+  li:nth-of-type(1) p:nth-of-type(1)  {
+    opacity: 0;
+    transition: .25s;
+  }
+  
+  p.show {
+    opacity: 1;
+  }
