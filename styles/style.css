@@ -35,6 +35,7 @@
 
   body {
     height:100vh;
+
     margin: 0;
     background-color: var(--color-background);
 
@@ -58,6 +59,10 @@
     font-family: 'mario', 'serif';
     font-size: 2.5em;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
 
   h1 span:nth-of-type(1) {
@@ -81,24 +86,24 @@
   }
 
   p {
+    /* max-width: 35em; */
+
     margin: 0;
     padding: 0.5em;
-    background-color: blueviolet;
 
     font-family: 'roboto', 'sans-serif';
     font-size: 1em;
     text-align: center;
 
-    max-width: 35em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
 
   .info p {
-    /* margin: 0; */
-    /* padding: 0.5em; */
-
     font-family: 'mario', 'serif';
     font-size: 1.2em;
-    /* text-align: center; */
+
     line-height: 1.5em;
   }
 
@@ -110,23 +115,159 @@
   }
 
   ol {
-    list-style: none;
     margin:0;
     padding:0;
-    list-style: none;
-  }
 
-  ol li p:nth-of-type(1) {
-    font-family: 'mario', 'serif';
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
   }
 
   ol li {
+    width: 100%;
+    
+    margin: 0;
+    padding: 2em 0 0 0;
+
+    height: 25em;
+    
+
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    /* position: absolute; */
   }
 
-  li video {
-    width: 40vh;
-    height: auto;
+  ol li p:nth-of-type(1) {
+    margin: 0;
+
+    font-family: 'mario', 'serif';
+  }
+
+  ol li p:nth-of-type(2) {
+    margin: 0;
+    width: 60em;
+
+    font-family: 'roboto', 'sans-serif';
+  }
+
+
+
+  /***********/
+  /* VIDEO'S */
+  /***********/
+  #video1985 {
+    display: flex;
+    align-items: center;
+
+    width: 22.5em;
+
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  #video1985.show {
+    opacity: 1;
+  }
+
+  #video1989 {
+    display: flex;
+    align-items: center;
+
+    width: 22.5em;
+
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  #video1989.show {
+    opacity: 1;
+  }
+
+  #video1993 {
+    display: flex;
+    align-items: center;
+
+    width: 22.5em;
+
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  #video1993.show {
+    opacity: 1;
+  }
+
+  #video1996 {
+    display: flex;
+    align-items: center;
+
+    width: 22.5em;
+
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  #video1996.show {
+    opacity: 1;
+  }
+
+  #video2002 {
+    display: flex;
+    align-items: center;
+
+    width: 22.5em;
+
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  #video2002.show {
+    opacity: 1;
+  }
+
+  #video2006 {
+    display: flex;
+    align-items: center;
+
+    width: 22.5em;
+
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  #video2006.show {
+    opacity: 1;
+  }
+
+  #video2009 {
+    display: flex;
+    align-items: center;
+
+    width: 22.5em;
+
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  #video2009.show {
+    opacity: 1;
+  }
+
+  #video2011 {
+    display: flex;
+    align-items: center;
+
+    width: 22.5em;
+
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  #video2011.show {
+    opacity: 1;
   }
 
   section:nth-child(3) {
@@ -135,6 +276,7 @@
     background-size: contain;
     background-position: center; 
   }
+
   button {
     width: 7em;
     height: 7em;
@@ -168,15 +310,4 @@
 
 
 
-  /****************************/
-  /* (ON)ZICHTBAAR MAKEN INFO */
-  /****************************/
 
-  li:nth-of-type(1) p:nth-of-type(1)  {
-    opacity: 0;
-    transition: .25s;
-  }
-  
-  p.show {
-    opacity: 1;
-  }

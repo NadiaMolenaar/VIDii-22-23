@@ -9,7 +9,7 @@
   gap:2em;
   align-content: center;
 
-  background-color: #f006;
+  /* background-color: #f006; */
 }
 
 
@@ -17,11 +17,10 @@
 /******************************/
 /*   GRID LAY-OUT 1e SECTIE   */
 /******************************/
-
-/* Dit maakt van de eerste sectie een grid container */
 section:nth-child(1) {
-  /* display: grid; */
-  background-color: #0f06;
+  height: 10em;
+  padding-top: 5em;
+  /* background-color: #0f06; */
 } 
 
 
@@ -29,17 +28,15 @@ section:nth-child(1) {
 /******************************/
 /*   GRID LAY-OUT 2e SECTIE   */
 /******************************/
-section:nth-child(2) {
-  background-color: #00f6;
-}
+/* section:nth-child(2) {
+    background-color: #00f6;
+} */
 
 section:nth-child(2) ol {
   display: grid;
 }
 
-/* Dit maakt van de li's in tweede sectie een grid container */
 section:nth-child(2) li {
-  /* display: grid; */
   grid-row-start:1;
   grid-column-start:1;
   width: 35em;
@@ -50,8 +47,6 @@ section:nth-child(2) li {
 /******************************/
 /*   GRID LAY-OUT 3e SECTIE   */
 /******************************/
-
-/* Dit maakt van de derde sectie een grid container */
 section:nth-child(3) {
 
   display: grid;
