@@ -4,16 +4,16 @@
 
 @font-face {
   font-family: 'mario';
-  src: url('../fonts/super-mario-webfont.woff2') format('woff2'),
-       url('../fonts/super-mario-webfont.woff') format('woff');
+  src: url('/fonts/super-mario-webfont.woff2') format('woff2'),
+       url('/fonts/super-mario-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'roboto';
-  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
-       url('../fonts/roboto-regular-webfont.woff') format('woff');
+  src: url('/fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('/fonts/roboto-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,7 +49,7 @@ body {
 
   background-color: var(--color-background);
 
-  background-image: url(../images/background2.png);
+  background-image: url(/images/background2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;  
@@ -137,28 +137,28 @@ p {
 
 /* [data-video="video"] zorgt ervoor dat de container meermaals gebruikt kan worden, maar met verschillende video's die worden afgespeeld. */
 .videocontainer[data-video="video1"] {
-  background-image: url(../videos/video1.mp4);
+  background-image: url(/videos/video1.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .videocontainer[data-video="video2"] {
-  background-image: url(../videos/video3.mp4);
+  background-image: url(/videos/video3.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .videocontainer[data-video="video3"] {
-  background-image: url(../videos/video2.mp4);
+  background-image: url(/videos/video2.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .videocontainer[data-video="video4"] {
-  background-image: url(../videos/video4.mp4);
+  background-image: url(/videos/video4.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -175,7 +175,7 @@ p {
 ol {
   width: 35vw;
 
-  background-image: url(../images/kast.png);
+  background-image: url(/images/kast.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ li {
 li:nth-of-type(1) {
   margin: 4.25em 2em 0 0;
 
-  background-image: url(../images/nintendoconsoles/nes.png);
+  background-image: url(/images/nintendoconsoles/nes.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -214,14 +214,14 @@ li:nth-of-type(1) {
 li:nth-of-type(2) {
   margin: 1.5em 0.5em 0 0;
 
-  background-image: url(../images/nintendoconsoles/gameboy.png);
+  background-image: url(/images/nintendoconsoles/gameboy.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 li:nth-of-type(3) {
-  background-image: url(../images/nintendoconsoles/boeken1.png);
+  background-image: url(/images/nintendoconsoles/boeken1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -231,7 +231,7 @@ li:nth-of-type(3) {
 li:nth-of-type(4) {
   margin: 1.5em 0 0 1.5em;
 
-  background-image: url(../images/nintendoconsoles/snes.png);
+  background-image: url(/images/nintendoconsoles/snes.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -240,7 +240,7 @@ li:nth-of-type(4) {
 li:nth-of-type(5) {
   margin: 2em 1.75em 0 0;
 
-  background-image: url(../images/nintendoconsoles/mappen.png);
+  background-image: url(/images/nintendoconsoles/mappen.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -249,7 +249,7 @@ li:nth-of-type(5) {
 li:nth-of-type(6) {
   margin: 2.75em 0.75em 0 0;
 
-  background-image: url(../images/nintendoconsoles/gamecube.png);
+  background-image: url(/images/nintendoconsoles/gamecube.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -258,7 +258,7 @@ li:nth-of-type(6) {
 li:nth-of-type(7) {
   margin: 1.5em 0 0 1.5em;
   
-  background-image: url(../images/nintendoconsoles/wii.png);
+  background-image: url(/images/nintendoconsoles/wii.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -267,7 +267,7 @@ li:nth-of-type(7) {
 li:nth-of-type(8) {
   margin: 2.75em 0 0 1.5em;
 
-  background-image: url(../images/nintendoconsoles/boeken2.png);
+  background-image: url(/images/nintendoconsoles/boeken2.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -283,6 +283,7 @@ li:nth-of-type(8) {
 
 button {
   width: 7.5em;
+  height: 5em;
   padding: 0; 
 
   background: none;
@@ -293,7 +294,7 @@ button {
 }
 
 button:hover {
-  cursor: url(../images/mario.png), pointer;
+  cursor: url(/images/mario.png), pointer;
 }
 
 button:focus {
@@ -334,7 +335,6 @@ img:nth-of-type(1) {
 
 .animatietanooki {
   animation: tanooki 5s linear;
-  overflow: hidden;
 }
 
 @keyframes tanooki {
@@ -359,30 +359,32 @@ img:nth-of-type(1) {
 
 img:nth-of-type(2) {
   height: auto;
-  width: 10em;
+  width: 50em;
 }
 
 #eastereggstar {
   position: absolute;
-  top: -10em;
+  top: 50%;
+  left: 50%;
+
+  opacity: 0;
 }
 
 .animatiestar {
-  animation: star 5s linear;
-  overflow: hidden;
+  animation: star 5s ease-in-out;
 }
 
-/* ANDERE ANIMATIE TOEPASSEN 
-Transform (rotate) Y */
 @keyframes star {
-  0% { top: 0em;
-    transform: rotatey('0deg');}
-
-  25% {top: 25em;}     
-     
-  50% {(skew: '360deg');}
-          
-  75% {top: 25em;} 
-
-  100% {top: 0em;}
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
